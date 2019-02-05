@@ -1,0 +1,25 @@
+#
+#Created by: Wendi Yu
+#Created on: Feb-05-2019
+#
+#Calculate This program calculates the number of logs that will fit on a truck, if the length is given
+
+logsSize = float(input("Please, Enter log size (options: 0.25, 0.5, 1):"))
+
+#Constant
+ 
+TruckStorage = 1100
+
+if (logsSize == 0.25 or logsSize == 0.5 or logsSize == 1):
+
+  logMass = logsSize * 20
+
+  logNumber = TruckStorage/logMass
+
+  print("The truck can carry " + str(logNumber) + " logs of " + str(logsSize) + "m.")
+  
+
+else:
+  print(" Invalid input! You can only choose numbers in the bracket.")
+
+input ()
